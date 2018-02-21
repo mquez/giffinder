@@ -17,18 +17,5 @@ $(document).ready(function(){
   }
 
   function callGiphyAPIWithSearchTerm(searchTerm) {
-      $.ajax({
-        url: "https://api.giphy.com/v1/stickers/search?q=dog&api_key=dc6zaTOxFJmzC",
-        method: "GET",
-        success: function(response) {
-             // Log the whole response to the console
-
-             // Log the first image of the data to the console
-
-             // Log the "type" property of the first image object to the console
-
-             // Log the "title" property of the first image object to the console
-        },
-      }); 
   }
 });
