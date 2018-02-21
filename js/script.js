@@ -11,9 +11,9 @@ $(document).ready(function(){
       // the searchTerm provided in the parameters
   }
 
-  function appendImageToBody(srcURL) {
-      // write a function that will append an <img> to the body with the
-      // URL provided in the parameters
+  function appendImageToGallery(srcURL) {
+      // write a function that will append an <img> to the div with class="gallery"
+      // using the URL provided in the parameters
   }
 
   function callGiphyAPIWithSearchTerm(searchTerm) {
