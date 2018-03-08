@@ -10,10 +10,20 @@ $(document).ready(function(){
     2. get the typed input from the search input box
     3. call the functions below!
   */
+  $("button").click(function() {
+    var searchTerm = $("input").val();
+    callGiphyAPIWithSearchTerm(searchTerm);
+  })
+});
   
   function giphyURLWithSearchTerm(searchTerm) {
       // write a function that will return a url for the giphy API with
       // the searchTerm provided in the parameters
+   var firstPart = "api.giphy.com/v1/stickers/search?";
+   var secondPart = "q=city&api_key=dc6zaTOxFJmzC";
+   var newURL = firstPart + secondPart;
+   
+   return newURL;
   }
 
   function appendImageToGallery(srcURL) {
